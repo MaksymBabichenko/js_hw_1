@@ -25,22 +25,13 @@ let currentIteration = 1;
 while (maxIteration > currentIteration) {
   // Start code
   sum = sum + currentIteration;
-
+  // 1 = 1 + 1
+  // 2 = 2 + 1
+  // 3 = 3 + 1
+  // 4 = 4 + 1
+  // Cycle end
+  currentIteration = currentIteration + 1;
   // End code
 }
 
-let count = 1; // source - источник - главарь
-// count = 1
-
-count = 2;
-// count = 2
-
-count = 3;
-// count = 3
-
-console.log(count); // 3
-
-count = count + 1;
-// count = 4
-
-console.log(count); // 4
+alert(sum);
