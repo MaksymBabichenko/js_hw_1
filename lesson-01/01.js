@@ -15,7 +15,8 @@
 let sum = 0;
 
 // Helper Variables
-let maxIteration = 20;
+const maxIteration = 20;
+
 let currentIteration = 1;
 
 // while - зарезервировное слово для цыкла
