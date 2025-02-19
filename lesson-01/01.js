@@ -22,7 +22,9 @@ let currentIteration = 1;
 // (...) - Условия при котором работает наш цыкл. Пока условие равно true цыкл крутится, в случае когда условие будет false цыкл закочится
 // {} - блок кода который будет исполнятся при каждой итерация (круг, цикл, исполнение) цылка
 
-while (maxIteration > currentIteration) {
+// ">" "<" "==" "===" ">=" "<="
+
+while (maxIteration >= currentIteration) {
   // Start code
   sum = sum + currentIteration;
   // 1 = 1 + 1
