@@ -34,4 +34,4 @@ while (maxIteration > currentIteration) {
   // End code
 }
 
-alert(sum);
+console.log(sum);
