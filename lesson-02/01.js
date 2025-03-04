@@ -4,15 +4,26 @@
 
 * Условия доступа:
 * - Пользователь должен иметь статус администратора (isAdmin) или быть подтвержденным пользователем (isVerifiedUser)
-* - А также пользователь должен обладать специальным разрешением (hasSpecialPermission) или временным пропуском (hasTemporaryPass)
+* - И пользователь должен обладать специальным разрешением (hasSpecialPermission) или временным пропуском (hasTemporaryPass)
 */
 
+// "&&" - и
+// "||" - или
+
+// Меня зовут Максим и Мне 18 и Я трейдер
+
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+const isAdmin = false;
+const isVerifiedUser = false;
+const hasSpecialPermission = true;
+const hasTemporaryPass = true;
 
-let isAccess
+let isAccess =
+  (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
 
+// if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
+//   isAccess = true;
+// }
+
+console.log(isAccess);
 // your code
