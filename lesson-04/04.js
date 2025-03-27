@@ -12,4 +12,16 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-function doubleEachCharacter() {}
+function doubleEachCharacter(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result = result + str[i].repeat(2);
+  }
+  return result;
+}
+
+console.log(doubleEachCharacter("hello"));
+
+///let result = ''
+///1: result = hh
+///2: result = ee+hh++++
