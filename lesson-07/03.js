@@ -1,4 +1,4 @@
-/*
+/*    
 * Напишите функцию truncate, которая принимает строку и максимальную длину.
 
 * Если длина строки превышает указанное количество символов, функция должна обрезать строку до этой длины и добавлять в конец многоточие (...).
@@ -10,5 +10,9 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  if (str.length > maxLength) {
+    return str.slice(0, maxLength) + "...";
+  }
+  return str;
 }
+console.log(truncate("gggggg ggggg ggggg gggg", 15));
