@@ -46,10 +46,6 @@ startButton.addEventListener("click", () => {
       clearInterval(timerId);
       timerId = undefined;
       isTimerStarted = false;
-
-      setTimeout(function () {
-        countdownDisplay.textContent = "Готовы?";
-      }, 1500);
       return;
     }
     countdownDisplay.textContent = counter;
@@ -61,5 +57,5 @@ cancelButton.addEventListener("click", () => {
   clearInterval(timerId);
   timerId = undefined;
   isTimerStarted = false;
-  countdownDisplay.textContent = "Готовы?";
+  countdownDisplay.textContent = "Отменено";
 });
