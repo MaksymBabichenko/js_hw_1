@@ -4,7 +4,7 @@
  */
 
 function isNumeric(str) {
-  return !Number.isNaN(parseInt(str));
+  return !Number.isNaN(Number(str));
 }
 console.log(isNumeric("gggg"));
 
